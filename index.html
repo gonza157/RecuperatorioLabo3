@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./js/scripts.js" type="module" defer></script>
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <img src="./image/logo.png" alt="logo de empresa" id="logo">
+        <nav>
+            <ul>
+                <li class="nav" ><a href="#">Nosotros</a></li>
+                <li class="nav" ><a href="#">Anuncios</a></li>
+                <li class="nav" ><a href="#">Blog</a></li>
+                <li class="nav"><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1 class="importante">Administracion</h1>
+        <!-- <img id="Autos" src="#" alt="Imagen portada"> -->
+        <div class="portada">
+
+        </div>
+
+        <div>
+        <form action="" id="form">
+            <input type="hidden" name="id">
+            <fieldset>
+                <legend>Informacion Del Anuncios</legend>
+                <label for="txtTitulo">TITULO:</label> <br>
+                <input type="text" name="titulo" placeholder="Titulo" required><br><br>
+                <label for="txtRadio" >TRANSACCION:</label> <br>
+                <input class="inpCenter" type="radio" name="transaccion" value="Venta" checked> Venta
+                <input class="inpCenter" type="radio" name="transaccion" value="Alquiler"> Alquiler <br><br>
+                <label for="txtRadio" >METODOS DE PAGO </label> <br>
+                <input class="inpCenter" type="checkbox" name="pago" value="tarjeta"required> visa <br><br>
+                <input class="inpCenter" type="checkbox" name="pago" value="efectivo"> Pago facil <br><br>
+                <label for="txtDescripcion">DESCRIPCION</label><br>
+                <input type="text" name="descripcion" placeholder="Descipcion" required><br><br>
+                <label for="txtPrecio">PRECIO</label><br>
+                <input type="text" name="precio" placeholder="Precio" required><br><br>
+                <img id="iconos" src="./image/icono-puerta.png" alt="icono-puerta">
+                <input id="iconos" type="text" name="puertas" placeholder="Puertas" required>
+                <img id="iconos" src="./image/icono-velocímetro.png" alt="icono-kms">
+                <input id="iconos" type="text" name="kms" placeholder="Kms" required>
+                <img id="iconos" src="./image/icons-motor.png" alt="icono-potencia">
+                <input  id="iconos" type="text" name="potencia" placeholder="Potencia" required>
+
+            </fieldset>
+
+            <button type="submit" id="btnGuardar"><i class="fa fa-floppy-o" aria-hidden="true"></i> Guardar</button>
+            <!-- <input type="submit" id="btnGuardar" value="Guardar"> -->
+            <input type="button" id="btnModificar" class="oculto" value="Modificar">
+            <input type="button" id="btnEliminar" class="oculto" value="Eliminar">
+
+        </form>
+    </div>
+        <div id="spinner-container"></div>
+
+        <div id="divTabla">
+
+        </div>
+
+    </main>
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="#">Anuncios</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <p>Todos los derechos recerbados 2019 &copy;</p>
+    </footer>
+
+</body>
+</html>

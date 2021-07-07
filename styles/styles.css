@@ -1,0 +1,140 @@
+table{
+    border: 1px solid black;
+    border-collapse: collapse;
+
+}
+
+th,td{
+    border: 1px solid black;
+}
+th{
+    background-color: rosybrown;
+}
+
+ul li a{
+    text-decoration: none;
+    color: blanchedalmond;
+    margin: 5px 10px;
+}
+
+ul{
+    display: flex;
+    list-style-type: none;
+    border-radius: 5px;
+    
+}
+p{
+    color: blanchedalmond;
+}
+
+fieldset{
+    margin: 20px 200px;
+}
+
+#btnGuardar{
+    /* background-color: rgb(73, 168, 60); */
+    background-color: rgb(107, 205, 50);
+    color: white;
+}
+
+#form{
+    margin: 20px 0px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.oculto{
+    display: none;
+}
+
+.importante{
+    display: flex;
+    justify-content: center;
+    color: gray;
+}
+#Autos{
+    display: flex;
+    justify-content: center;
+    
+}
+.portada{
+    background-image: url(../image/autoblanco.jpg);
+    /* background-position: center; */
+    background-size:cover;
+    /*margin: 20px 0px;*/
+    height: 600px;
+    display: flex;
+    justify-content: center;
+}
+main div{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+
+}
+
+footer{
+    height: 100px;
+    background-color: rgb(24, 132, 168);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header{
+    background-color: rgb(24, 132, 168);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 200px;
+}
+
+@media (max-width: 1200px){
+    header,footer,main{
+        flex-direction:row;
+        align-items: center;
+    }
+    /* #logo{
+        display: none;
+    } */
+    .portada{
+         display: none;
+    } 
+    #iconos{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 640px){
+    header,footer, main{
+        min-width: 600px;
+        flex-direction:row;
+        align-items: center;
+    }
+
+    #iconos{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+/* @media (max-width: 570px){
+    header,footer, main {
+        display: inline-block;
+        min-width: 580px;
+    }
+     .nav{
+        display: none;
+    } 
+    #iconos{
+        display: flex;
+        align-items: center;
+    }
+
+} */
